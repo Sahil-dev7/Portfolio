@@ -1,73 +1,93 @@
-# Welcome to your Lovable project
+<div align="center">
+  <img src="public/dev.png" width="128" height="128" alt="Portfolio Logo" />
+  <h1>Portfolio Website</h1>
 
-## Project info
+  <p><strong>showcasing developer, creator, gallery, skills and gamer perspectives.</strong></p>
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+  <p>
+    <img src="https://img.shields.io/badge/Status-Active-brightgreen" alt="Status" />
+    <img src="https://img.shields.io/badge/License-MIT-blue" alt="License" />
+    <img src="https://img.shields.io/badge/Type-Portfolio-lightblue" alt="Type" />
+  </p>
+</div>
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+built with **React**, **TypeScript**, and **Tailwind CSS**. skills, interests, professional projects, and curated content from Spotify, YouTube, and Instagram. Features smooth animations, and a polished UI powered by shadcn-ui components.
 
-**Use Lovable**
+## Screenshots
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+  <img src="https://i.postimg.cc/8cZwwNm8/Screenshot-2026-05-24-192358.png" alt="Hero Section" />
 
-Changes made via Lovable will be committed automatically to this repo.
 
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
+### Installation
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+# Step 1: Clone the repository
+git clone https://github.com/Sahil-dev7/Portfolio
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+# Step 2: Navigate to project directory
+cd sahilportfolio27; npm install
 
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Step 3: Start development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+The portfolio will be available at `http://localhost:5173` with hot module reloading enabled.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Project Structure
 
-**Use GitHub Codespaces**
+```
+src/
+├── components/
+│   ├── [Persona Pages] — Developer.tsx, Friend.tsx, Gamer.tsx
+│   ├── [Sections] — Hero, Skills, Projects, Interests, etc.
+│   ├── PersonaSwitcher.tsx — Persona selection component
+│   ├── Scene3D.tsx — WebGL 3D rendering
+│   ├── Navbar.tsx — Navigation header
+│   ├── Footer.tsx — Footer with links
+│   └── ui/ — shadcn-ui component library
+├── pages/ — Main persona page views
+├── hooks/
+│   ├── use-mobile.tsx — Mobile device detection
+│   └── use-toast.ts — Toast notifications
+├── lib/ — Utility functions
+├── test/ — Unit tests with Vitest
+└── [Config files] — Vite, TypeScript, Tailwind configs
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
 
-## What technologies are used for this project?
+### Customization Guide
 
-This project is built with:
+**Update Personal Information:**
+- Edit persona content in `src/components/Developer.tsx`, `Friend.tsx`, `Gamer.tsx`
+- Modify skill list in `src/components/SkillsSection.tsx`
+- Update projects in `src/components/ProjectsSection.tsx`
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+**Styling:**
+- Tailwind theme colors in `tailwind.config.ts`
+- Global styles in `src/index.css`
+- Component-specific styles in respective TSX files
 
-## How can I deploy this project?
+**Add New Sections:**
+1. Create component in `src/components/`
+2. Import in respective persona page
+3. Style with Tailwind CSS classes
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+**Social Links & Contact:**
+- Update URLs in `src/components/Footer.tsx`
+- Modify contact methods in `src/components/ContactSection.tsx`
 
-## Can I connect a custom domain to my Lovable project?
 
-Yes, you can!
+## Tech Stack
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+<p align="center">
+  <a href="https://sahilw.pages.dev">
+    <img src="https://skillicons.dev/icons?i=react,vite,tailwind,github,html,css,threejs,linux,neovim,cloudflare" />
+  </a>
+</p>
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+
+## License
+
+This portfolio is open source and licensed under the MIT License. See the [LICENSE](https://opensource.org/license/mit) file for details.
